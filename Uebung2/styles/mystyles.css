@@ -1,0 +1,63 @@
+body{
+font-family: Verdana;
+}
+
+header
+{
+    color: #FF5F00;;
+    background-color: #AFAFAF;
+    text-align: center;
+
+}
+
+
+
+table, th, td {
+    border: 1px solid #a0a0a0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-width: thin 0 0 thin;
+    margin: 0 0 1em;
+    table-layout: auto;
+    box-shadow: 5px 10px #888888;
+    max-width: 100%;
+}
+th, td {
+    font-weight: normal;
+    text-align: left;
+}
+th {
+    color: white;
+    background-color: lawngreen;
+    font-weight: 700;
+
+}
+
+a{
+    border: 2px solid grey;
+    padding:5px;
+    background-color: #0082D1;;
+    text-decoration:none;
+    border-radius: 15px;
+
+
+}
+
+a:link { /* noch nicht angeklickt */
+    color:red;
+}
+
+a:visited { /* bereits angeklickt */
+    color:darkgrey;
+}
+
+a:hover {   /* mouse over */
+    color:limegreen;
+}
+
+a:active { /* wird gerade angeklickt */
+    color:lightblue;
+}
