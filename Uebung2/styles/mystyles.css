@@ -4,7 +4,7 @@ font-family: Verdana;
 
 header
 {
-    color: #FF5F00;;
+    color: #FF5F00;
     background-color: #AFAFAF;
     text-align: center;
 
@@ -13,7 +13,7 @@ header
 
 
 table, th, td {
-    border: 1px solid #a0a0a0;
+    border: 2px solid black;
 }
 
 table {
@@ -25,6 +25,11 @@ table {
     box-shadow: 5px 10px #888888;
     max-width: 100%;
     text-align: center;
+}
+
+section table
+{
+    padding: 80%;
 }
 th, td {
     font-weight: normal;
@@ -42,9 +47,11 @@ th {
 a{
     border: 2px solid grey;
     padding:5px;
-    background-color: #0082D1;;
-    text-decoration:none;
+    background-color: #0082D1;
     border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
 
 
 }
@@ -55,21 +62,16 @@ nav
     padding-top: 50px;
 }
 
-a:link { /* noch nicht angeklickt */
-    color:red;
-}
 
-a:visited { /* bereits angeklickt */
-    color:darkgrey;
-}
+
+
 
 a:hover {   /* mouse over */
-    color:limegreen;
+    color: #FF5F00;
+    background-color: #AFAFAF;
 }
 
-a:active { /* wird gerade angeklickt */
-    color:lightblue;
-}
+
 
 footer
 {
