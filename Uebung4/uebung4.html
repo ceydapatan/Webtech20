@@ -138,12 +138,12 @@
 
 <nav >
     <ul class="nav">
-        <li class = "nav-item"> <a class="nav-link active" href="uebung3.html" >ALLE</a></li>
+        <li class = "nav-item"> <a class="nav-link active" href="uebung4.html" >ALLE</a></li>
         <li class = "nav-item"> <a class="nav-link active" href="#A" >A-G</a></li>
         <li class = "nav-item">  <a class="nav-link active" href="#H" >H-L</a></li>
         <li class = "nav-item"> <a class="nav-link active" href="#M" >M-R</a></li>
         <li class = "nav-item"> <a class="nav-link active" href="#S" >S-Z</a></li>
-        <li class = "nav-item"> <a class="nav-link active" href="./uebung3.html" >Startseite</a></li>
+        <li class = "nav-item"> <a class="nav-link active" href="./uebung4.html" >Startseite</a></li>
     </ul>
 </nav>
 
@@ -596,13 +596,13 @@
 
 
     <tr id = "e1">
-        <td> <input id="i1" type="text" class="form-control" placeholder="Vorname" oninput="removeClass()" /></td>
-        <td> <input id="i2" type="text" class="form-control" placeholder="Nachname" oninput="removeClass()"/></td>
-        <td> <input id="i3" type="text" class="form-control" placeholder="Email-Adresse"oninput="removeClass()" /></td>
+        <td> <input id="i1" type="text" class="form-control" placeholder="Vorname"  /></td>
+        <td> <input id="i2" type="text" class="form-control" placeholder="Nachname" /></td>
+        <td> <input id="i3" type="text" class="form-control" placeholder="Email-Adresse" /></td>
 
         <td>
 
-            <input id="i4" type="text" class="form-control" placeholder="IP-Adresse" oninput="removeClass()"/>
+            <input id="i4" type="text" class="form-control" placeholder="IP-Adresse" />
 
         </td>
 
@@ -625,7 +625,7 @@
 </div>
 
 <footer>
-    Übung 3 Ceyda Patan
+    Übung 4 Ceyda Patan
 </footer>
 
 </body>
@@ -635,6 +635,28 @@
     let input2 =  document.getElementById('i2');
     let input3 =  document.getElementById('i3');
     let input4 =  document.getElementById('i4');
+
+
+
+    input1.addEventListener('input', function (event) {
+
+        this.classList.remove('is-invalid');
+    })
+
+    input2.addEventListener('input', function (event) {
+        this.classList.remove('is-invalid');
+    })
+
+    input3.addEventListener('input', function (event) {
+        this.classList.remove('is-invalid');
+
+    })
+
+    input4.addEventListener("input", function (event) {
+        this.classList.remove('is-invalid');
+    })
+
+
 
     function checkAndAdd(){
 
@@ -680,6 +702,10 @@
               input3.value="";
               input4.value="";
 
+
+
+
+
           }
 
 
@@ -723,13 +749,7 @@
     }
 
 
-    function removeClass()
-    {
-        input1.classList.remove('is-invalid')
-        input2.classList.remove('is-invalid')
-        input3.classList.remove('is-invalid')
-        input4.classList.remove('is-invalid')
-    }
+
 </script>
 
 </html>
