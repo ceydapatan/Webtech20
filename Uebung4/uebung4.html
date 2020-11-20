@@ -178,24 +178,18 @@
     </thead>
     <tbody id="28">
     <tr id="A">
-        <td>Adam</td>
-        <td>Anderson</td>
-        <td>aanderson8@google.fr</td>
-        <td>118.93.83.157</td>
-
-
-     <td></td>
-
+    <td>Adam</td>
+    <td  class="lastname">Anderson</td>
+    <td>aanderson8@google.fr</td>
+    <td>118.93.83.157</td>
+        <td></td>
     </tr>
     <tr>
         <td>Susan</td>
-        <td>Andrews</td>
+        <td  class="lastname">Andrews</td>
         <td>sandrewsn@google.co.jp</td>
         <td>228.214.9.251</td>
-
-
      <td></td>
-
     </tr>
     <tr>
         <td>Catherine</td>
@@ -531,7 +525,7 @@
     </tr>
     <tr>
         <td>Shirley</td>
-        <td>Scott</td>
+        <td class="lastname">Scott</td>
         <td>sscottm@macromedia.com</td>
         <td>219.237.108.82</td>
      <td></td>
@@ -539,7 +533,7 @@
     </tr>
     <tr>
         <td>Lillian</td>
-        <td>Stephens</td>
+        <td class = "lastname">Stephens</td>
         <td>lstephens19@hugedomains.com</td>
         <td>89.85.137.204</td>
      <td></td>
@@ -658,6 +652,9 @@
 
 
 
+
+
+
     function checkAndAdd(){
 
 
@@ -667,15 +664,7 @@
         let parent = document.getElementById('28');
 
 
-
-
-
-
-
           if(input1.value!=""&&input2.value!=""&&input3.value!=""&&input4.value!="") {
-
-
-
 
               let new_td1 = document.createElement('td');
               new_td1.innerHTML = input1.value;
@@ -693,6 +682,24 @@
 
 
               new_tr.append(new_td1, new_td2, new_td3, new_td4, new_td5);
+
+
+              let a = parent.childNodes;
+
+
+
+              for(let i = 1; i < a.length; i ++)
+              {
+
+                let  test = a[0].childNodes[1];
+                console.log(test.innerHTML);
+
+              }
+
+
+
+
+
 
 
               parent.insertBefore(new_tr, e1);
@@ -747,6 +754,9 @@
 
 
     }
+
+
+
 
 
 
