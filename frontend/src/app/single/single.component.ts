@@ -1,3 +1,5 @@
+
+
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {ActivatedRoute} from '@angular/router';
@@ -12,11 +14,11 @@ import {Data} from '../shared/data';
 
 export class SingleComponent implements OnInit {
   singleFormGroup: FormGroup;
-  id: string;
-  data: Data;
+  id!: string | null ;
+  data!: Data;
 
   constructor(private fb: FormBuilder, private route: ActivatedRoute, private ds: DataService) {
-
+    this.singleFormGroup = this.createFormGroup();
   }
 
   ngOnInit(): void {

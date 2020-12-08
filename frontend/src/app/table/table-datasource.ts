@@ -4,8 +4,13 @@ import { MatSort } from '@angular/material/sort';
 import { map } from 'rxjs/operators';
 import { Observable, of as observableOf, merge } from 'rxjs';
 import { Data } from '../shared/data';
+import { DataService } from '../shared/data.service';
 
-// TODO: replace this with real data from your application
+
+
+
+
+
 
 
 /**
@@ -14,7 +19,7 @@ import { Data } from '../shared/data';
  * (including sorting, pagination, and filtering).
  */
 export class TableDataSource extends DataSource<Data> {
-  data: Data[];
+  data: Data[] ;
   paginator: MatPaginator;
   sort: MatSort;
 
@@ -22,7 +27,6 @@ export class TableDataSource extends DataSource<Data> {
     super();
     this.data = this.ds.getAll();
   }
-
   /**
    * Connect this data source to the table. The table will only update when
    * the returned stream emits new items.
@@ -83,3 +87,4 @@ export class TableDataSource extends DataSource<Data> {
 function compare(a: string | number, b: string | number, isAsc: boolean): number {
   return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
 }
+
